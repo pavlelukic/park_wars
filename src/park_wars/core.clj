@@ -1,7 +1,8 @@
 (ns park-wars.core
-  (:gen-class))
+  (:require [park-wars.grid :as grid]
+            [park-wars.vehicles :as vehicles]))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn -main []
+  (println "---- PARK WARS ----")
+  (println "Empty grid: " (grid/create-empty-grid))
+  (println "Vehicles: " (vehicles/vehicles)))
