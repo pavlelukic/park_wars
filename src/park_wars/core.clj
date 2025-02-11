@@ -4,5 +4,12 @@
 
 (defn -main []
   (println "---- PARK WARS ----")
-  (println "Empty grid: " (grid/create-empty-grid))
-  (println "Vehicles: " (vehicles/vehicles)))
+  (let [empty-grid (grid/create-empty-grid)]
+    (println "Grid: ")
+    (grid/display-grid empty-grid)
+    (println "Vehicles: " (vehicles/vehicles))))
+  
+
+
+
+
