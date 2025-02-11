@@ -7,8 +7,7 @@
   (let [empty-grid (grid/create-empty-grid)]
     (println "Grid: ")
     (grid/display-grid empty-grid)
-    (println "Vehicles: " (vehicles/vehicles))))
-  
+    (println "Available Vehicles: " (vehicles/vehicles))))
 
 
 
